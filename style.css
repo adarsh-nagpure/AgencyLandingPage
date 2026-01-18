@@ -1,0 +1,389 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+
+    width:;
+    height: ;
+    margin: 0;
+    padding: 0;
+    background: rgb(66, 61, 61);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: cover;
+  background: url(images/bg.jpg)top/120% 110vh no-repeat;
+}
+
+
+.parent{
+    
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    place-content: center;
+}
+.child{
+    
+    width: 60%;
+    height:;
+}
+.section1{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+.section2{
+    width: 100%;
+    height: 58vh;
+    align-content: center;
+}
+.section3{
+    height: 68vh;
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+
+@media(max-width:768px){
+    body{
+       background: url(images/bg.jpg)top;
+   height: auto;
+    overflow-y: auto;
+    }
+    .parent{
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.child{
+    width: 100%;
+    height:auto;
+   
+    
+}
+.section1{
+ 
+    height: 10vh;
+
+}
+.section2{
+    height: 70vh;
+  place-items: center;
+}
+.section3{
+    height:117vh;
+    display: grid;
+   grid-template-columns: repeat(2 ,1fr);
+     padding-left: 1.5%;
+  
+}
+}
+@media(min-width:769px) and (max-width:1024px){
+body{
+      background: url(images/bg.jpg)top/200% 110vh no-repeat;
+}
+.parent{
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    place-content: center;
+}
+.child{
+    width: 100%;
+    height:120vh;
+
+}
+.section1{
+}
+ 
+.section2{
+    
+}
+.section3{
+
+}
+
+
+}
+
+
+.section1 .header{
+    width: 50%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+    
+}
+
+.section1 .nav{
+        width: 50%;
+    height: 100%;
+   
+     display: flex;
+    align-items: center;
+
+}
+@media(max-width:768px){
+    .section1 .header{
+    width: 30%;
+  
+}
+
+.section1 .nav{
+        width: 70%;
+    
+
+}
+}
+
+
+@media(min-width:769px) and (max-width:1024px){
+
+
+
+
+}
+.section1 .header h2{
+   padding-top: 20px;
+     color: white;
+}
+
+.section1 .nav ul{
+    padding-top: 20px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    gap: 3.6vw;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .nav ul li{
+    display: flex;
+    justify-content: space-between;
+     justify-content: center;
+}
+.section1 .nav ul li a{
+    text-decoration: none;
+     color: white;
+} 
+.section1 .nav ul li a:hover{
+   color: rgb(255, 102, 0);
+ 
+}
+.section1 .nav .contect{
+border: solid white;
+padding: 7px 30px;
+}
+ 
+
+@media(max-width:768px){
+    .section1 .header h2{
+   font-size: large;
+   padding-left: 0.5rem;
+}
+
+.section1 .nav ul{
+    gap: 3vw;
+  
+  padding-left: 0;
+   margin-left: 0;
+   
+}
+.section1 .nav ul li{
+
+}
+.section1 .nav ul li a{
+    
+       font-size: 0.7rem;
+} 
+.section1 .nav .contect{
+border: solid white;
+padding: 7px 10px;
+}
+
+}
+
+
+@media(min-width:769px) and (max-width:1024px){
+
+.section1 .header h2{
+   padding-left: 1rem;
+}
+
+.section1 .nav ul{
+  
+    gap: 2vw;
+    
+}
+.section1 .nav ul li{
+  
+}
+.section1 .nav ul li a{
+  
+} 
+.section1 .nav .contect{
+
+padding: 2vw 2.3vw;
+}
+
+
+}
+
+
+
+
+.section2 .content{
+  
+    width: 70%;
+
+}
+.section2 .content h1{
+    font-size: 5rem;
+    color: white;
+    font-weight: 400;
+    
+}
+
+.section2 .content h1 .highlight{
+    color: rgb(255, 102, 0);
+}
+.section2 .content h3{
+    display: flex;
+    color: white;
+    white-space: nowrap;
+    align-items: center;
+    
+    
+}
+.section2 .content h3 .hr{
+margin-left:2rem;
+font-size: 3px;
+padding:2.5px 50px;
+background:linear-gradient(90deg,#f14c00 , #f14c007e , #f14c0000);
+border-radius: 3px;
+}
+@media(max-width:768px){
+    .section2 .content{
+
+    width: 90%;
+}
+.section2 .content h1{
+
+    text-align: center;
+    font-size: 3.5rem;
+    
+}
+
+.section2 .content h1 .highlight{
+  
+}
+.section2 .content h3{
+     text-align: center;
+     justify-content: center;
+    
+}
+.section2 .content h3 .hr{
+margin-left:2rem;
+font-size: 3px;
+padding:2.5px 50px;
+background:linear-gradient(90deg,#f14c00 , #f14c007e , #f14c0000);
+border-radius: 3px;
+}
+
+}
+
+
+@media(min-width:769px) and (max-width:1024px){
+.section2 .content h1{
+    padding-left: 1rem;
+}
+.section2 .content h3{
+    padding-left: 1rem;
+}
+
+
+}
+
+.section3 .card{
+
+    border-radius: 10px;
+    width: 14%;
+    height: 30vh;
+    padding: 7px;
+    font-size: small;
+    color: white;
+    background-color: rgba(209, 209, 209, 0.205);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+.section3 .card:hover{
+    transform: translateY(-56%);
+
+
+}
+.section3 .card h2{
+font-weight: 600;
+}
+.section3 .card h3{
+    font-weight: 600;
+}
+.section3 .card p{
+font-weight: 200;
+line-height:18px;
+}
+
+
+@media(max-width:768px){
+    .section3 .card{
+    display: grid;
+    border-radius: 10px;
+    width: 85%;
+    height: 36.5vh;
+    padding: 7px;
+ 
+}
+.section3 .card:hover{
+    transform: translateY(-0%);
+
+
+}
+.section3 .card h2{
+font-weight: 600;
+margin-bottom: 0;
+}
+.section3 .card h3{
+  
+    margin: 0;
+    font-weight: 600;
+}
+.section3 .card p{
+font-weight: 200;
+line-height:18px;
+}
+
+}
+
+
+@media(min-width:769px) and (max-width:1024px){
+.section3 .card:hover{
+    transform: translateY(-56%);
+
+
+}
+
+
+
+}
